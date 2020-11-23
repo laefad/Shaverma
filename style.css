@@ -1,0 +1,74 @@
+body {
+	margin : 0px;
+	font-size : calc(1.25rem + viewport_relative_value);
+}
+
+header {
+	display : flex;
+	flex-direction: column;
+	justify-content : center;
+	align-items: center;
+	width : 100vw;
+	height : 40vh;
+	background : url(imgs/header_img.jpg);
+	background-size: 100% auto;
+	background-position: 0 -200px;
+}
+
+header > div {
+	display : flex;
+	justify-content : center;
+	align-items: center;
+	height : 30vh;
+}
+
+#name_holder {
+	display : flex;
+	justify-content : center;
+	align-items: center;
+	border-radius : 100px;
+	background: radial-gradient(circle, rgba(252,160,81,0.601) 0%, rgba(255,193,124,0.576) 84%, rgba(255,233,0,0.231) 100%);
+	height : 10vh;
+	width : 30vw;
+}
+
+#name_holder > p {
+	font-family : 'Courier New';
+	font-size : 3rem;
+	font-weight: 700;
+}
+
+header > nav {
+	display : flex;
+	justify-content : space-around;
+	align-items: center;
+	width : 90vw;
+	height : 10vh;
+	background : linear-gradient(90deg, rgba(223,223,223,0.937) 0%, rgba(233,233,233,0.858) 100%);
+}
+
+#menu_div > .product {
+	display: none;
+}
+
+.header_a_wrapper
+{
+	display : flex;
+	justify-content : center;
+	align-items: center;
+	width:100%;
+	height: 100%;
+}
+
+header > nav > .header_a_wrapper:nth-child(even) {
+	border-left: 1px black solid;
+	border-right: 1px black solid;
+}
+
+.header_a_wrapper > a {
+	font-family : 'Times', sans-serif;;
+	font-size : 3rem;
+	font-weight: 700;
+	text-decoration: none;
+	color: #000;
+}
