@@ -18,7 +18,7 @@ header {
 	align-items: center;
 	width : 100vw;
 	height : 40vh;
-	background : url(imgs/header_img.jpg);
+	background : url(../imgs/header_img.jpg);
 	background-size: 100% auto;
 	background-position: 0 -200px;
 	background-repeat: no-repeat;
@@ -89,17 +89,23 @@ header > nav {
 }
 
 #container {
-	display: flex;
-	justify-content : center;
-	align-items: center;
-	min-height : 55vh;
+	min-height: 55vh;
 	width: 100vw;
-	background : url(imgs/wood_plank2.jpg);
+	
+	background : url(../imgs/wood_plank2.jpg);
 }
 
 #text_holder {
-	width : 80vw;
-	height: 10vh;
+	display: flex;
+	flex-direction: column;
+	justify-content : center;
+	align-items: center;
+	
+	margin: 0px;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	width: 80vw;
+	
 	background : rgba(255, 255, 255, 0.9);
 }
 
@@ -110,7 +116,7 @@ footer {
 	width: 100vw;
 	height : 5vh;
 	min-height: 2.666rem;
-	background : url(imgs/wood_plank2.jpg);
+	background : url(../imgs/wood_plank2.jpg);
 	background-position: 0 -300px;
 }
 
@@ -140,12 +146,12 @@ footer > p {
 	
 	#text_holder {
 		width : 100vw;
+		margin: 0px;
 	}
 	
 	#name_holder, footer > p {
 		width : 40vw;
 	}
-	
 	
 }
 
@@ -198,9 +204,9 @@ footer > p {
 	.header_a:hover {
 		background : linear-gradient(90deg,rgba(250,174,56,0.7) 0%, rgba(255,128,57,0.8) 50%, rgba(250,174,56,0.7) 100%);
 	}
-}
 	
 	#text_holder {
 		width : 100vw;
+		margin: 0px;
 	}
 }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Отзывы</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="styles/review.css">
+        <!--<link rel="icon" href="">-->
+        <script src="script.js" type="text/javascript"></script>
+    </head>
+<body>
+
+    <header>
+		<div>
+			<div id="name_holder">
+				<p>Мир Шаурмы</p>
+			</div>
+		</div>
+		<nav>
+			<a class="header_a" href="index.html">Главная</a>
+			<a class="header_a" href="menu.html">Меню</a>
+			<a class="header_a" href="promo.html">Акции</a>
+			<a class="header_a" href="reviews.html">Отзывы</a>
+			<a class="header_a" href="about.html">О Нас</a>
+		</nav>
+    </header>
+	
+	<div id="container">
+		<div id="text_holder">
+			<h1>Отзывы наших покупателей:</h1>
+			<div class="review">
+				<img class="review_img" src="imgs/reviews/vinnie.jpg"/>
+				<p class="review_name">Винни Пух</p>
+				<p class="review_date">19.28 21.11.2020</p>
+				<hr class="review_hr">
+				<p class="review_text">
+				Давным- давно, когда страна, в которой я родился и до сих пор живу называлась СССР. Началась "Перестройка ", закончившаяся развалом великой страны и гибелью многих тысяч людей. Тогда появилась, на рынках в основном, загадочная и вкусная шаурма. Покупал я её тогда при любой возможности, так как она была очень вкусной!
+				</p>
+			</div>
+			<div class="review">
+				<img class="review_img" src="imgs/reviews/pyatachok.jpg"/>
+				<p class="review_name">Пятачок</p>
+				<p class="review_date">14.57 24.11.2020</p>
+				<hr class="review_hr">
+				<p class="review_text">
+				Спасибо, все было обалденно как вкусно! И фахитос, и шаурма, а картофель фри, просто пальчики оближешь, хрустящий, пропеченный, горячий. Курьер тоже порадовал, очень вежливый и доставил все быстро, пока горячее, еще и доставка нам получилась бесплатно.
+				</p>
+			</div>
+			<div class="review">
+				<img class="review_img" src="imgs/reviews/ia.jpg"/>
+				<p class="review_name">Иа</p>
+				<p class="review_date">12.11 23.11.2020</p>
+				<hr class="review_hr">
+				<p class="review_text">
+				Люблю шаурму, часто беру ее себе на ужин. Пробовал в разных местах, пока что вкуснее, чем в этом кафе не нашел. Здесь все делают как мне нравится, беру порцию макси со свининой в лаваше. Мясо прожаренное, ароматное, много соуса, овощи, лаваш с поджаристой корочкой, порция большая.
+				</p>
+			</div>
+			<h1>Оставить отзыв:</h1>
+			
+			<form id="comment" action="">
+				<div class="criterion">
+					<p>Вкус</p>
+					<div class="star_rating">
+						<input type="checkbox" id="star-1" name="rating_taste" value="1">
+						<label for="star-1" title="Оценка «1»">★</label>
+						<input type="checkbox" id="star-2" name="rating_taste" value="2">
+						<label for="star-2" title="Оценка «2»">★</label> 
+						<input type="checkbox" id="star-3" name="rating_taste" value="3">
+						<label for="star-3" title="Оценка «3»">★</label> 
+						<input type="checkbox" id="star-4" name="rating_taste" value="4">
+						<label for="star-4" title="Оценка «4»">★</label> 
+						<input type="checkbox" id="star-5" name="rating_taste" value="5">
+						<label for="star-5" title="Оценка «5»">★</label>	    
+					</div>
+				</div>
+				<div class="criterion">
+					<p>Обслуживание</p>
+					<div class="star_rating">
+						<input type="checkbox" id="star-1" name="rating_service" value="1">
+						<label for="star-1" title="Оценка «1»">★</label>
+						<input type="checkbox" id="star-2" name="rating_service" value="2">
+						<label for="star-2" title="Оценка «2»">★</label> 
+						<input type="checkbox" id="star-3" name="rating_service" value="3">
+						<label for="star-3" title="Оценка «3»">★</label> 
+						<input type="checkbox" id="star-4" name="rating_service" value="4">
+						<label for="star-4" title="Оценка «4»">★</label> 
+						<input type="checkbox" id="star-5" name="rating_service" value="5">
+						<label for="star-5" title="Оценка «5»">★</label>	    
+					</div>
+				</div>
+			
+				
+				<input name="name" type="text" required form="comment" placeholder="Введите имя или пседоним" />
+				<textarea name="text" required form="comment" placeholder="Введите комментарий"></textarea>
+				<input id="submit_button" type="submit" value="Отправить" form="comment" />
+				
+			</form>
+		</div>
+	</div>
+	
+	<footer>
+		<p>Сайт сделал Дараган Федор</p>
+	</footer>
+
+</body>
+</html>
