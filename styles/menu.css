@@ -1,3 +1,23 @@
+#menu_nav {
+	display: flex;
+	justify-content: space-around;
+	width: 92%;
+	margin: 4%;
+	font-size: 2rem;
+}
+
+.menu_a {
+	color: black;
+	overline: none;
+	text-decoration: none;
+	border-bottom: 1px black solid;
+}
+
+.menu_a:hover {
+	background: gray;
+}
+
+
 .product {
 	display: flex;
 	flex-direction: column;
@@ -104,6 +124,17 @@
 }
 
 @media (max-width: 690px) {
+	
+	#menu_nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 92%;
+		margin: 4%;
+		font-size: 2rem;
+	}
+
 	.product {
 		width: 80vw;
 		border: 1px black solid;
