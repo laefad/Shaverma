@@ -53,6 +53,9 @@ form {
 	align-items: center;
 	width: 40vw;
 	border: 1px black solid;
+	border-radius: 20px;
+	padding: 1vmax;
+	margin-bottom: 1em;
 }
 
 .criterion {
@@ -60,26 +63,26 @@ form {
 	justify-content : space-between;
 	align-items: center;
 	width: 40vw;
-	border: 1px black solid;
 }
 
-form > input {
-	width: 20vmax;
+form > input[name="name"] {
+	width: 40vw;
 	border: 1px black solid;
 	margin: 1em;
 }
 
 form > textarea {
-	width: 20vmax;
-	height: 10vmax;
+	width: 40vw;
+	height: 30vh;
 }
 
 #submit_button {
+	text-align: center;
 	border: 2px gray solid;
 	border-radius: 10px;
-	padding: 10vw;
-	min-height: 2em;
-	height: 5vh;
+	padding: 2vmax;
+	min-height: 1em;
+	margin-top: 0.5em;
 }
 
 .star_rating {
@@ -110,9 +113,11 @@ form > textarea {
 		margin: 2em;
 		width: 100vw;
 	}
+	
 	.review_text {
 		margin-left: calc(10vmax + 1em);
 	}
+	
 	form {
 		width: 70vw;
 		margin-left: 15vw;
@@ -123,8 +128,8 @@ form > textarea {
 		margin-left: 15vw;
 		margin-right: 15vw;
 	}
-		
-	form > input {
+	
+	form > input[name="name"] {
 		width: 60vw;
 	}
 
@@ -140,25 +145,29 @@ form > textarea {
 		margin: 2em;
 		width: 100vw;
 	}
+	
 	.review_text {
 		margin-left: calc(10vmax + 1em);
 	}
+	
 	form {
 		width: 80vw;
 		margin-left: 10vw;
 		margin-right: 10vw;
 	}
+	
 	.criterion {
 		width: 80vw;
 		margin-left: 10vw;
 		margin-right: 10vw;
 	}
-	form > input {
-		width: 60vw;
+	
+	form > input[name="name"] {
+		width: 80vw;
 	}
 
 	form > textarea {
-		width: 60vw;
+		width: 80vw;
 		height: 30vh;
 	}
 }
