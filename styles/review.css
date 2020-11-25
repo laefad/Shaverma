@@ -10,22 +10,20 @@ h1 {
 }
 
 .review_img {
-	border-radius: 100px;
+	border-radius: 1000px;
 	float:left;
 	margin: 0.5em;
-	width: 10vmax;
-	height: 10vmax;
+	width: 12vmax;
+	height: 12vmax;
 }
 
 .review_name {
 	margin: 0px;
-	margin-right: 0.2em;
 	font-size: 1.5em;
 }
 
 .review_date {
 	margin: 0px;
-	margin-right: 0.2em;
 	font-size: 1em;
 }
 
@@ -36,9 +34,18 @@ h1 {
 }
 
 .review_hr {
-	margin-left: 10vmax;
+	margin-left: calc(10vmax + 2em);
 	width: 30vw;
 	color: black;
+}
+
+.stars {
+	font-size: 1em;
+	color: gold;
+}
+
+.rating {
+	margin-left: 0.2em;
 }
 
 hr {
@@ -115,7 +122,15 @@ form > textarea {
 	}
 	
 	.review_text {
-		margin-left: calc(10vmax + 1em);
+		margin-right: 10vw;
+	}
+	
+	.review_text, .rating, .review_date {
+		margin-left: calc(10vmax + 2em);
+	}
+	
+	.review_name {
+		margin-left: calc(10vmax + 1.35em);
 	}
 	
 	form {
@@ -146,8 +161,16 @@ form > textarea {
 		width: 100vw;
 	}
 	
+	.review_text, .rating, .review_date {
+		margin-left: calc(10vmax + 2em);
+	}
+	
 	.review_text {
-		margin-left: calc(10vmax + 1em);
+		margin-right: 10vw;
+	}
+	
+	.review_name {
+		margin-left: calc(10vmax + 1.35em);
 	}
 	
 	form {
