@@ -17,7 +17,6 @@
 	align-items: center;
 	width: 100%;
 	height: 80%;
-	border: 1px black solid;
 }
 
 #text_about {
@@ -27,34 +26,36 @@
 	align-items: center;
 	height: 100%;
 	width: 40%;
-	border: 1px black solid;
+	
+	font-size: 1.2em;
+	text-align: center;
+	font: italic 1.2em "Lucida Handwriting", cursive;
+}
+
+#date {
+	text-decoration: underline;
 }
 
 #images_about {
 	margin: 0px;
 	height: 100%;
 	width: 60%;
-}
-
-.slide > img {
-	margin: 0px;
-	height: 100%;
-	width: 100%;
-}
-
-.slide {
-	display: none;
-	position: relative;
-	height: 100%;
-	width: 100%;
-}
-
-.slide:first-child {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content : flex-end;
+	align-items: center;
+	
+	background: url(../imgs/about/img_1.jpg);
+	background-size : cover;
 }
 
 #selectors {
-	position: absolute;
+	margin-bottom: 1em;
+}
+
+#selectors > input[name^="slider"] {
+	 transform:scale(1.5);
+	 opacity:0.9;
 }
 
 #bottom_content_wrapper {
@@ -62,8 +63,9 @@
 	flex-direction: column;
 	justify-content : center;
 	align-items: center;
-	border: 1px black solid;
 	display: flex;
 	width: 100%;
 	height: 20%;
+	
+	font: 1.2em Papyrus, fantasy;
 }
