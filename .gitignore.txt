@@ -1,4 +1,0 @@
-*.txt
-план.png
-index.html
-images/wood_plank.jpg
