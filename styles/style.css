@@ -187,22 +187,20 @@ footer > p {
 	header > nav {
 		width: 100vw;
 		height: 30vh;
-		min-height : calc(2.666*5rem);
+		min-height : calc(2.666*4rem);
 		flex-direction: column;
 		background : linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(250,174,56,0.5) 32%, rgba(255,128,57,0.5) 50%, rgba(250,174,56,0.5) 66%, rgba(255,255,255,0) 100%);
 	}
 	
-	.header_a_wrapper {
-		width: 88vw;
-		margin-left : 6vw;
-		margin-right : 6vw;
-		min-height : 2.666rem;
-	}
-	
-	.header_a:nth-last-of-type(2), .header_a:nth-of-type(2) {
+	.header_a:nth-last-of-type(2){
 		border: 0px;
 		border-top: 1px black solid;
 		border-bottom: 1px black solid;
+	}
+	
+	.header_a:nth-of-type(2){
+		border: 0px;
+		border-top: 1px black solid;
 	}
 	
 	.header_a:hover {
