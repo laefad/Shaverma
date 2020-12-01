@@ -64,9 +64,13 @@ header > nav {
 	background : linear-gradient(90deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 100%);
 }
 
-.header_a:nth-last-of-type(2), .header_a:nth-of-type(2)  {
+.header_a:nth-last-of-type(2) {
 	border-left: 1px black solid;
 	border-right: 1px black solid;
+}
+
+.header_a:nth-of-type(2) {
+	border-left: 1px black solid;
 }
 
 .header_a{
